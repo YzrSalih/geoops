@@ -1,0 +1,6 @@
+[
+  { "id": "a1", "name": "Alpha Tower", "type": "building", "height": 120.5, "centroid": [21.012, 52.229] },
+  { "id": "a2", "name": "Beta Mall", "type": "building", "height": 35.3,  "centroid": [21.005, 52.236] },
+  { "id": "a3", "name": "Main Road 1", "type": "road",     "height": null, "centroid": [21.018, 52.232] },
+  { "id": "a4", "name": "Central Park POI", "type": "poi", "height": null, "centroid": [21.01, 52.231] }
+]
