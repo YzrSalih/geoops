@@ -1,1 +1,1 @@
-# geoops
+# GeoOps - Real-Time Geospatial Viewer
