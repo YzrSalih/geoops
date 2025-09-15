@@ -1,5 +1,5 @@
 import { Router, type Request, type Response } from "express";
-import data from "../data/assets.json";
+import data from "../../../src/data/assets.json";
 import type { Asset } from "../types";
 
 const router = Router();
@@ -52,6 +52,14 @@ router.get("/", (req: Request, res: Response) => {
   const page = items.slice(off, off + lim);
 
   res.json({ items: page, total });
+});
+
+// Fetch a single asset by id
+router.get("/:id", (req: Request, res: Response) => {
+  const { id } = req.params;
+  const asset = ALL_ASSETS.find((a) => a.id === id);
+  if (!asset) return res.status(404).json({ error: "Asset not found" });
+  res.json(asset);
 });
 
 export default router;
